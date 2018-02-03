@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AminoApi\AminoApi.csproj">
+      <Project>{6648E4F3-CA43-47AD-9EB6-7D5ED97FD333}</Project>
+      <Name>AminoApi</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

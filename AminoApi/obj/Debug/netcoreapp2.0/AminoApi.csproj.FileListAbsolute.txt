@@ -1,0 +1,8 @@
+/Users/elertan/Dev/AminoBot/AminoApi/bin/Debug/netcoreapp2.0/AminoApi.deps.json
+/Users/elertan/Dev/AminoBot/AminoApi/bin/Debug/netcoreapp2.0/AminoApi.dll
+/Users/elertan/Dev/AminoBot/AminoApi/bin/Debug/netcoreapp2.0/AminoApi.pdb
+/Users/elertan/Dev/AminoBot/AminoApi/obj/Debug/netcoreapp2.0/AminoApi.csproj.CoreCompileInputs.cache
+/Users/elertan/Dev/AminoBot/AminoApi/obj/Debug/netcoreapp2.0/AminoApi.AssemblyInfoInputs.cache
+/Users/elertan/Dev/AminoBot/AminoApi/obj/Debug/netcoreapp2.0/AminoApi.AssemblyInfo.cs
+/Users/elertan/Dev/AminoBot/AminoApi/obj/Debug/netcoreapp2.0/AminoApi.dll
+/Users/elertan/Dev/AminoBot/AminoApi/obj/Debug/netcoreapp2.0/AminoApi.pdb
