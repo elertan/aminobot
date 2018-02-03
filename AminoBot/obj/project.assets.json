@@ -834,6 +834,16 @@
         "runtime": {
           "bin/placeholder/AminoApi.dll": {}
         }
+      },
+      "CleverBotApi/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/CleverBotApi.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleverBotApi.dll": {}
+        }
       }
     }
   },
@@ -3574,11 +3584,17 @@
       "type": "project",
       "path": "../AminoApi/AminoApi.csproj",
       "msbuildProject": "../AminoApi/AminoApi.csproj"
+    },
+    "CleverBotApi/1.0.0": {
+      "type": "project",
+      "path": "../CleverBotApi/CleverBotApi.csproj",
+      "msbuildProject": "../CleverBotApi/CleverBotApi.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "AminoApi >= 1.0.0",
+      "CleverBotApi >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -3612,6 +3628,9 @@
           "projectReferences": {
             "/Users/elertan/Dev/AminoBot/AminoApi/AminoApi.csproj": {
               "projectPath": "/Users/elertan/Dev/AminoBot/AminoApi/AminoApi.csproj"
+            },
+            "/Users/elertan/Dev/AminoBot/CleverBotApi/CleverBotApi.csproj": {
+              "projectPath": "/Users/elertan/Dev/AminoBot/CleverBotApi/CleverBotApi.csproj"
             }
           }
         }

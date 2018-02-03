@@ -8,5 +8,6 @@
       <Project>{6648E4F3-CA43-47AD-9EB6-7D5ED97FD333}</Project>
       <Name>AminoApi</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CleverBotApi\CleverBotApi.csproj" />
   </ItemGroup>
 </Project>

@@ -16,5 +16,7 @@ namespace AminoApi.Models.Chat
             YourLastMessageTime = DateTime.Parse(Convert.ToString(data[2]));
             SomeNumber = Convert.ToInt32(data[3]);
         }
+
+        public bool HasReceivedNewMessage => YourLastMessageTime != LastMessageTime;
     }
 }

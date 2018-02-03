@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/elertan/Dev/AminoBot/AminoBot/AminoBot.csproj",
-    "projectName": "AminoBot",
-    "projectPath": "/Users/elertan/Dev/AminoBot/AminoBot/AminoBot.csproj",
-    "outputPath": "/Users/elertan/Dev/AminoBot/AminoBot/obj/",
+    "projectUniqueName": "/Users/elertan/Dev/AminoBot/CleverBotApi/CleverBotApi.csproj",
+    "projectName": "CleverBotApi",
+    "projectPath": "/Users/elertan/Dev/AminoBot/CleverBotApi/CleverBotApi.csproj",
+    "outputPath": "/Users/elertan/Dev/AminoBot/CleverBotApi/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -14,14 +14,7 @@
     ],
     "frameworks": {
       "netcoreapp2.0": {
-        "projectReferences": {
-          "/Users/elertan/Dev/AminoBot/AminoApi/AminoApi.csproj": {
-            "projectPath": "/Users/elertan/Dev/AminoBot/AminoApi/AminoApi.csproj"
-          },
-          "/Users/elertan/Dev/AminoBot/CleverBotApi/CleverBotApi.csproj": {
-            "projectPath": "/Users/elertan/Dev/AminoBot/CleverBotApi/CleverBotApi.csproj"
-          }
-        }
+        "projectReferences": {}
       }
     },
     "warningProperties": {
