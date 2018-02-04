@@ -1,0 +1,8 @@
+/Users/elertan/Dev/AminoBot/CleverBotApi/bin/Debug/netcoreapp2.0/CleverBotApi.deps.json
+/Users/elertan/Dev/AminoBot/CleverBotApi/bin/Debug/netcoreapp2.0/CleverBotApi.dll
+/Users/elertan/Dev/AminoBot/CleverBotApi/bin/Debug/netcoreapp2.0/CleverBotApi.pdb
+/Users/elertan/Dev/AminoBot/CleverBotApi/obj/Debug/netcoreapp2.0/CleverBotApi.csproj.CoreCompileInputs.cache
+/Users/elertan/Dev/AminoBot/CleverBotApi/obj/Debug/netcoreapp2.0/CleverBotApi.AssemblyInfoInputs.cache
+/Users/elertan/Dev/AminoBot/CleverBotApi/obj/Debug/netcoreapp2.0/CleverBotApi.AssemblyInfo.cs
+/Users/elertan/Dev/AminoBot/CleverBotApi/obj/Debug/netcoreapp2.0/CleverBotApi.dll
+/Users/elertan/Dev/AminoBot/CleverBotApi/obj/Debug/netcoreapp2.0/CleverBotApi.pdb

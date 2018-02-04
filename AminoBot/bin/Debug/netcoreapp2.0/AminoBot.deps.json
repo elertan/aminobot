@@ -1,17 +1,23 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "a57167a91e6f2e0d92b3a3dc1dbf26349ba10a7f"
+    "signature": "ba77421c6338dadb327c403d26285b3af96f6231"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "AminoBot/1.0.0": {
         "dependencies": {
-          "AminoApi": "1.0.0"
+          "AminoApi": "1.0.0",
+          "Cleverbot": "1.0.0"
         },
         "runtime": {
           "AminoBot.dll": {}
+        }
+      },
+      "Cleverbot/1.0.0": {
+        "runtime": {
+          "lib/Cleverbot.Net.dll": {}
         }
       },
       "Microsoft.CSharp/4.3.0": {
@@ -402,6 +408,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Cleverbot/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3xdlNjPQ9YzrYZicMXZ1kAvhr/c4y1Qf+OTjmQfAsxlo511swHdEhCE4SEDYqc8ZgRyX6JrUCIsOMkyF236sKg==",
+      "path": "cleverbot/1.0.0",
+      "hashPath": "cleverbot.1.0.0.nupkg.sha512"
     },
     "Microsoft.CSharp/4.3.0": {
       "type": "package",

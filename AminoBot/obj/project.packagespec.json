@@ -17,9 +17,6 @@
         "projectReferences": {
           "/Users/elertan/Dev/AminoBot/AminoApi/AminoApi.csproj": {
             "projectPath": "/Users/elertan/Dev/AminoBot/AminoApi/AminoApi.csproj"
-          },
-          "/Users/elertan/Dev/AminoBot/CleverBotApi/CleverBotApi.csproj": {
-            "projectPath": "/Users/elertan/Dev/AminoBot/CleverBotApi/CleverBotApi.csproj"
           }
         }
       }
@@ -33,6 +30,10 @@
   "frameworks": {
     "netcoreapp2.0": {
       "dependencies": {
+        "Cleverbot": {
+          "target": "Package",
+          "version": "[1.0.0, )"
+        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",

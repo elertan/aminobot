@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "Cleverbot/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/Cleverbot.Net.dll": {}
+        },
+        "runtime": {
+          "lib/Cleverbot.Net.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -834,20 +843,23 @@
         "runtime": {
           "bin/placeholder/AminoApi.dll": {}
         }
-      },
-      "CleverBotApi/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "compile": {
-          "bin/placeholder/CleverBotApi.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CleverBotApi.dll": {}
-        }
       }
     }
   },
   "libraries": {
+    "Cleverbot/1.0.0": {
+      "sha512": "3xdlNjPQ9YzrYZicMXZ1kAvhr/c4y1Qf+OTjmQfAsxlo511swHdEhCE4SEDYqc8ZgRyX6JrUCIsOMkyF236sKg==",
+      "type": "package",
+      "path": "cleverbot/1.0.0",
+      "files": [
+        "cleverbot.1.0.0.nupkg.sha512",
+        "cleverbot.nuspec",
+        "lib/Cleverbot.Net.deps.json",
+        "lib/Cleverbot.Net.dll",
+        "lib/Cleverbot.Net.pdb",
+        "nuget.exe"
+      ]
+    },
     "Microsoft.CSharp/4.3.0": {
       "sha512": "P+MBhIM0YX+JqROuf7i306ZLJEjQYA9uUyRDE+OqwUI5sh41e2ZbPQV3LfAPh+29cmceE1pUffXsGfR4eMY3KA==",
       "type": "package",
@@ -3584,17 +3596,12 @@
       "type": "project",
       "path": "../AminoApi/AminoApi.csproj",
       "msbuildProject": "../AminoApi/AminoApi.csproj"
-    },
-    "CleverBotApi/1.0.0": {
-      "type": "project",
-      "path": "../CleverBotApi/CleverBotApi.csproj",
-      "msbuildProject": "../CleverBotApi/CleverBotApi.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "AminoApi >= 1.0.0",
-      "CleverBotApi >= 1.0.0",
+      "Cleverbot >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -3628,9 +3635,6 @@
           "projectReferences": {
             "/Users/elertan/Dev/AminoBot/AminoApi/AminoApi.csproj": {
               "projectPath": "/Users/elertan/Dev/AminoBot/AminoApi/AminoApi.csproj"
-            },
-            "/Users/elertan/Dev/AminoBot/CleverBotApi/CleverBotApi.csproj": {
-              "projectPath": "/Users/elertan/Dev/AminoBot/CleverBotApi/CleverBotApi.csproj"
             }
           }
         }
@@ -3644,6 +3648,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Cleverbot": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
@@ -3658,5 +3666,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Cleverbot 1.0.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Cleverbot",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }

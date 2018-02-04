@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using AminoApi;
 using AminoApi.Models.Chat;
+using Cleverbot.Net;
 
 namespace AminoBot
 {
@@ -10,12 +12,10 @@ namespace AminoBot
     {
         private TimeSpan ChatCheckDelay { get; set; } = TimeSpan.FromSeconds(10);
         private readonly AminoApi.IApi _aminoApi;
-        private readonly CleverBotApi.IApi _cleverBotApi;
         
         public Bot()
         {
             _aminoApi = new Api(new HttpClient());
-            _cleverBotApi = new CleverBotApi.Api();
         }
         
         public async Task Run()
@@ -34,11 +34,21 @@ namespace AminoBot
                     var threadCheckResult = await _aminoApi.ThreadCheckAsync(community.Id);
                     foreach (var threadCheck in threadCheckResult.Data.ThreadChecks)
                     {
-                        if (!threadCheck.HasReceivedNewMessage) continue;
-
-                        Console.WriteLine($"Replying to thread {threadCheck.ThreadId}");
                         // Chat has new message
-                        await _aminoApi.SendMessageToChatAsync(community.Id, threadCheck.ThreadId, "Pong!");
+                        if (!threadCheck.HasReceivedNewMessage) continue;
+                        
+                        // Get message
+                        var messagesResult = await _aminoApi.GetMessagesForUserByCommunityIdAsync(community.Id, threadCheck.ThreadId);
+                        var lastMessage = messagesResult.Data.Messages.First();
+
+                        Console.WriteLine($"Sending message '{lastMessage.Content}' to CleverBot");
+                        
+                        var session = new CleverbotSession("CC71qR8ldXaH4WcMimFQ02cNfBg");
+                        var cleverbotResponse = await session.GetResponseAsync(lastMessage.Content);
+                        var response = cleverbotResponse.Response;
+
+                        Console.WriteLine($"Replying to {lastMessage.Author.Nickname} with '{response}'");
+                        await _aminoApi.SendMessageToChatAsync(community.Id, threadCheck.ThreadId, response);
                     }
                 }
 
